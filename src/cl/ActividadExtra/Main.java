@@ -91,6 +91,7 @@ public class Main {
                     System.out.println("Error !"+ ex.getMessage()+" No es un numero");
                     opcion = 100;
                 }
+
                 for (int i = 0; i<camionetaList.size(); i++ ){
                     if (!camionetaList.get(i).isArrendado()&&camionetaList.get(i).getNumAuto()==opcion){
                         System.out.println("Acaba de arrendar su camioneta");
@@ -113,6 +114,8 @@ public class Main {
                     if (!coupeList.get(i).isArrendado()&&coupeList.get(i).getNumAuto()==opcion){
                         System.out.println("Acaba de arrendar su camioneta");
                         coupeList.get(i).setArrendado(true);
+                    }else {
+                        System.out.println("solo puede seleccionar un vehiculo de la lista");
                     }
                 }
 
